@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./globals.css";
 import { Navbar } from "./components/Navbar";
 import { BootstrapClient } from "./components/BootstrapClient";
+import { FloatingWhatsAppClient } from "./components/FloatingWhatsAppClient";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
         <Navbar />
 
         {children}
-
+        <FloatingWhatsAppClient />
         <BootstrapClient />
       </body>
     </html>
